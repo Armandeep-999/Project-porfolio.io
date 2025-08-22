@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #222e3a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #1a237e;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+header,
+footer {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #39ff14 0%, #00eaff 100%);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+}
+
+footer {
+    border-radius: 0 0 18px 18px;
+    margin: 0 auto 32px auto;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+section {
+    background: #fff;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+    padding: 32px;
+    margin: 0 auto 32px auto;
+    width: 70%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #39ff14;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00eaff;
+    border-radius: 4px;
+    background: #f8fafc;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #39ff14;
+    outline: none;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* 📱 Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    header, section, footer,.v{
+        width: 96vw;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 20px;
+    }
+    section img {
+        width: 120px;
+        height: 120px;
+    }
+    form {
+        padding: 15px;
+    }
+}
+
+/* 📱 Tablets (601px – 900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+    header, section, footer {
+        width: 95vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    section img {
+        width: 140px;
+        height: 140px;
+    }
+    form {
+        max-width: 100%;
+    }
+}
+
+/* 💻 Laptops (901px – 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+    section {
+        width: 80%;
+    }
+    img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* 🖥️ Large screens (1201px and above) */
+@media (min-width: 1201px) {
+    section {
+        width: 60%;
+    }
+    header, footer {
+        width: 80%;
+    }
+}

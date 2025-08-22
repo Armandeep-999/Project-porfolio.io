@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 10px;
+}
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+.logo {
+    background-image: url(../assets/img/logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border {
+    border: 2px solid transparent;
+}
+.border:hover {
+    border: 2px solid wheat;
+}
+.one {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.two {
+    color: white;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+/* SEARCH BAR */
+.navsearch {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 200px;
+}
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none;
+    flex-shrink: 0;
+}
+.searchinput {
+    flex: 1;
+    font-size: 1rem;
+    border: none;
+    padding: 0 8px;
+    min-width: 0;
+}
+.searchicon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: orange;
+    color: #0f1111;
+    flex-shrink: 0;
+}
+.navsearch:hover {
+    border: 2px solid orange;
+}
+
+/* OTHER NAVBAR ELEMENTS */
+span {
+    font-size: 0.7rem;
+}
+.nav2 {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.icon3 {
+    font-size: 1rem;
+}
+
+/* PANEL */
+.pannel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.options p {
+    display: inline;
+    margin-left: 15px;
+}
+.options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+.deals {
+    font-weight: bolder;
+}
+.pannel-all {
+    display: flex;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* HERO */
+.hero-section {
+    display: flex;
+    background-image: url(assets/img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-message {
+    background-color: white;
+    height: 40px;
+    width: 80%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+/* SHOP BOXES */
+.shop-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box {
+    height: 400px;
+    width: 23%;
+    background-color: #f3f3f3;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.box-img {
+    background-size: cover;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.content-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.content-box p {
+    color: #007185;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* 📱 Phones */
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: auto;   /* scroll if too crowded */
+    }
+    .navsearch {
+        width: 100%;
+        margin: 0 5px;
+    }
+    .options {
+        display: none;      /* hide extra links on phones */
+    }
+    .shop-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90%;
+        height: auto;
+    }
+    .hero-section {
+        height: 200px;
+    }
+}
+
+/* 💻 Laptops (default styles already work) */
+@media (min-width: 901px) {
+    .navsearch {
+        max-width: 620px;
+    }
+    .box {
+        width: 23%;
+    }
+}
